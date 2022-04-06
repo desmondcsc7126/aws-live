@@ -170,10 +170,11 @@ def fectdata():
             
             
             #working_directory = r"C:\Users\Desmond\Documents\Taruc\Year 2 Sem 3\Cloud Computing\Assignment\static\image"
-            absolutepath = os.path.abspath(__file__)
-            fileDirectory = os.path.dirname(absolutepath)
-            working_directory = os.path.join(fileDirectory, 'static\image')  
+            #absolutepath = os.path.abspath(__file__)
+            #fileDirectory = os.path.dirname(absolutepath)
+            #working_directory = os.path.join(fileDirectory, 'static\image')  
             #summaries = your_bucket.objects.all()
+            working_directory = 'home/ec2-user/aws-live/static/image'
             
             for file in my_bucket.objects.all():
                 if file.key.startswith(emp_id):
