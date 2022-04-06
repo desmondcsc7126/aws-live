@@ -59,9 +59,10 @@ def profile():
         valid1[0] = 'True'
         return redirect(url_for('login'))
 
-@app.route('/manage')
+@app.route('/manage',methods=['POST','GET'])
 def manage():
 
+    db_conn.commit()
     SQL = 'select emp_id, emp_name, email from employee'
     cursor.execute(SQL)
     data = cursor.fetchall()
@@ -165,8 +166,13 @@ def fectdata():
             detail.append(x[8])
             detail.append(x[9])
             print(detail)
+
             
-            working_directory = r"C:\Users\Desmond\Documents\Taruc\Year 2 Sem 3\Cloud Computing\Assignment\static\image"
+            
+            #working_directory = r"C:\Users\Desmond\Documents\Taruc\Year 2 Sem 3\Cloud Computing\Assignment\static\image"
+            absolutepath = os.path.abspath(__file__)
+            fileDirectory = os.path.dirname(absolutepath)
+            working_directory = os.path.join(fileDirectory, 'static\image')  
             #summaries = your_bucket.objects.all()
             
             for file in my_bucket.objects.all():
