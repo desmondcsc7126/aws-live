@@ -136,7 +136,7 @@ function drawChart1() {
     </nav>
     <main class="mainContent">
     <div class="profile" action="http://192.168.100.6:80/" autocomplete="on" method = "GET"  >
-       <img id="images" src="{{ url_for('static', filename='image/'+detail[10]) }}" class="Prof_image">
+       <img id="images" src="https://desmondchongsoonchuen-employee.s3.amazonaws.com/{{detail[10]}}" class="Prof_image">
          
        
         <div class="prof_name">{{detail[1]}}</div>
