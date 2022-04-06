@@ -180,10 +180,10 @@ def fectdata():
             for file in my_bucket.objects.all():
                 if file.key.startswith(emp_id):
                     #local_file_name = os.path.join(working_directory, file.key.split("/")[0])
-                    print(f"Downloading {file.key} to {local_file_name}")
-                    my_bucket.download_file(file.key,local_file_name)
+                    #print(f"Downloading {file.key} to {local_file_name}")
+                    #my_bucket.download_file(file.key,local_file_name)
                     detail.append(file.key)         
-                    print(f"Successful Downloading  to {local_file_name}")
+                    #print(f"Successful Downloading  to {local_file_name}")
                     
            
     print(detail)
