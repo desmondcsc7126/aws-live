@@ -174,11 +174,12 @@ def fectdata():
             #fileDirectory = os.path.dirname(absolutepath)
             #working_directory = os.path.join(fileDirectory, 'static\image')  
             #summaries = your_bucket.objects.all()
-            working_directory = 'home/ec2-user/aws-live/static/image'
+            #working_directory = 'home/ec2-user/aws-live/static/image'
+            local_file_name = 'home/ec2-user/aws-live/static/image'
             
             for file in my_bucket.objects.all():
                 if file.key.startswith(emp_id):
-                    local_file_name = os.path.join(working_directory, file.key.split("/")[0])
+                    #local_file_name = os.path.join(working_directory, file.key.split("/")[0])
                     print(f"Downloading {file.key} to {local_file_name}")
                     my_bucket.download_file(file.key,local_file_name)
                     detail.append(file.key)         
