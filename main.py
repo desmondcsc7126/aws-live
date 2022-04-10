@@ -24,11 +24,11 @@ db_conn = connections.Connection(
 #                 aws_session_token=session_token
 #         )
 
-session = boto3.Session(
-                aws_access_key_id=access_key,
-                aws_secret_access_key=secret_access_key,
-                aws_session_token=session_token
-        )
+#session = boto3.Session(
+#                aws_access_key_id=access_key,
+#                aws_secret_access_key=secret_access_key,
+#                aws_session_token=session_token
+#        )
 
 #s3 = session.resource('s3')
 #my_bucket = s3.Bucket(custombucket)
