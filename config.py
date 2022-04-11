@@ -1,9 +1,9 @@
-custombucket = "desmondchongsoonchuen-employee"
+custombucket = "c4-employees"
 customregion = "us-east-1"
-customhost = "employee.cpz7zg34rcbs.us-east-1.rds.amazonaws.com"
+customhost = "employees.ccuybctlirf7.us-east-1.rds.amazonaws.com"
 customuser = "aws_user"
-custompass = "dcsc12345"
-customdb = "employee"
+custompass = "bait3273"
+customdb = "employees"
 
 access_key = 'ASIA23IK2VOCHNBGU5QR'
 secret_access_key = 'BA35zawxARSkTCa2Ah6z8zPZRPYVZgFG5f0jjnZ6'
